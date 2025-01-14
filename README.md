@@ -101,5 +101,5 @@ Contributions are welcome! Please fork the repository and submit a pull request 
 
 ## Contact
 
-For questions or feedback, reach out to [your-tarukomlika01.com].
+For questions or feedback, reach out to tarukomlika01@gmail.com
 
