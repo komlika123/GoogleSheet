@@ -1,0 +1,106 @@
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        .toolbar {
+            padding: 8px;
+            background: #f1f3f4;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .formula-bar {
+            padding: 8px;
+            background: #f8f9fa;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        #formula-input {
+            flex-grow: 1;
+            padding: 4px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .spreadsheet {
+            overflow: auto;
+            height: calc(100vh - 100px);
+            position: relative;
+        }
+
+        .grid {
+            border-collapse: collapse;
+            table-layout: fixed;
+        }
+
+        .cell {
+            border: 1px solid #ddd;
+            padding: 4px;
+            min-width: 100px;
+            height: 25px;
+            outline: none;
+            position: relative;
+        }
+
+        .header-cell {
+            background: #f1f3f4;
+            font-weight: bold;
+            text-align: center;
+            user-select: none;
+        }
+
+        .row-header {
+            background: #f1f3f4;
+            font-weight: bold;
+            text-align: center;
+            width: 40px;
+            user-select: none;
+        }
+
+        .selected {
+            border: 2px solid #1a73e8;
+            background: rgba(26, 115, 232, 0.1);
+        }
+
+        .toolbar button {
+            padding: 4px 8px;
+            margin-right: 4px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background: white;
+            cursor: pointer;
+        }
+
+        .toolbar button:hover {
+            background: #f1f3f4;
+        }
+
+        .toolbar select {
+            padding: 4px;
+            margin-right: 4px;
+        }
+
+        .resize-handle {
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            cursor: col-resize;
+            background: transparent;
+        }
+
+        .resize-handle:hover {
+            background: #1a73e8;
+        }
+    

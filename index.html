@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Spreadsheet Clone</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="toolbar">
+        <button onclick="applyFormat('bold')">B</button>
+        <button onclick="applyFormat('italic')">I</button>
+        <select id="fontSize" onchange="applyFontSize()">
+            <option value="12">12</option>
+            <option value="14">14</option>
+            <option value="16">16</option>
+        </select>
+        <button onclick="insertRow()">Insert Row</button>
+        <button onclick="deleteRow()">Delete Row</button>
+        <button onclick="insertColumn()">Insert Column</button>
+        <button onclick="deleteColumn()">Delete Column</button>
+        <select id="functions" onchange="applyFunction()">
+            <option value="">Functions</option>
+            <option value="SUM">SUM</option>
+            <option value="AVERAGE">AVERAGE</option>
+            <option value="MAX">MAX</option>
+            <option value="MIN">MIN</option>
+            <option value="COUNT">COUNT</option>
+            <option value="TRIM">TRIM</option>
+            <option value="UPPER">UPPER</option>
+            <option value="LOWER">LOWER</option>
+        </select>
+    </div>
+    <div class="formula-bar">
+        <span>fx</span>
+        <input type="text" id="formula-input" placeholder="Enter formula">
+    </div>
+    <div class="spreadsheet">
+        <table class="grid" id="grid"></table>
+    </div>
+
+   <script src="script.js"></script>
+</body>
+</html>
